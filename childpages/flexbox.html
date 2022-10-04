@@ -4,11 +4,11 @@
         <!-- Used by the Keyboard -->
         <meta charset="utf-8">
 
-        <title>Child Page Template</title>
+        <title>Flexbox</title>
 
         <meta name="author" content="Mark Mercer">
-        <meta name="description" content="Child Page Template Learning HTML by building simple website">
-        <meta name="keywords" content="child template boilerplate starter code HTML learning">
+        <meta name="description" content="Learning HTML by building simple website">
+        <meta name="keywords" content="starter code HTML learning flexbox">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -23,21 +23,65 @@
         <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
         <!-- Already specified in the charset above-->
 
+        <style>
+            * {
+                box-sizing: border-box;
+                font-size:2vw;
+            }
+            
+            //div {border: thin dotted red;}
+
+            .header {
+                border: 1px solid green;
+                padding: 15px;
+                font-size:4vw;
+            }
+
+            .menu {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid rgb(19, 0, 128);
+            }
+            .main {
+                width: 50%;
+                float: left;
+                padding: 15px;
+                border: 1px solid rgb(19, 0, 128);
+            }
+            .aside {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid rgb(19, 0, 128);
+            }
+            .footer {
+                padding: 15px;
+                border: 1px solid rgb(19, 0, 128);
+            }
+
+        </style>
+
         <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your Feature to execute scripts is turned off</noscript>
 
     </head>
     
     <body>
-        <header>Header</header>
-        <nav>Navigation</nav>
-        <aside>Aside</aside>
-        <main>Main</main>
-        <section>Section</section>
-        <article>Article</article>
-        <footer>Footer</footer>
+        <div>
+            <header class="header">
+                <h1 style="font-size:5vw">Flexbox</h1>
+                <h1>And Styles in the HEAD</h1>
+            </header>
+        </div>
+        <div><nav class="menu">Navigation</nav></div>
+        <div><main class="main">Main</main></div>
+        <div><aside class="aside">Aside</aside></div>
+        <div><section>Section</section></div>
+        <div><article>Article</article></div>
+        <div><footer></footer></div>
     </body>
 
-    <footer>
+    <div><footer>
         <blockquote cite="https://www.brainyquote.com/quotes/mitch_kapor_163583">
             <!-- Date Accessed 20220919 -->
         </blockquote>
@@ -49,6 +93,6 @@
                 Mitch Kapor</a>
             </em>
         </p>
-        <p>&copy AY Olaniyan, powered by AY Olaniyan in GitHub</p>
-    </footer>
+        <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
+    </footer></div>
 </html>
